@@ -22,3 +22,7 @@ export const links: LinkItem[] = [
   { id: "notion", label: "Notion 포트폴리오", url: "https://notion.so/example" },
   { id: "instagram", label: "Instagram", url: "https://instagram.com/example" },
 ];
+
+export function findLinkById(id: string): LinkItem | undefined {
+  return links.find((link) => link.id === id);
+}
